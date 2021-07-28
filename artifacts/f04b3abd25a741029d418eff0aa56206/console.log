@@ -1,0 +1,24 @@
+
+[2K[0G[31m  x 1) test\first.spec.js:9:5 › [chromium] saucectl demo test should verify title of the page[39m[2m (7ms)[22m
+
+
+[31m  1) test\first.spec.js:9:5 › [chromium] saucectl demo test should verify title of the page [90m========[31m[39m
+
+    ReferenceError: page is not defined
+
+       8 | test.describe('saucectl demo test', () => {
+       9 |     test('should verify title of the page', async () => {
+    > 10 |         await page.goto('https://www.saucedemo.com/');
+         |         ^
+      11 |         expect(await page.title()).toBe('Swag Labs');
+      12 |     });
+      13 | });
+
+    [2m    at c:\chef\payload\__project__\test\first.spec.js:10:9[22m
+    [2m    at FixtureRunner.resolveParametersAndRunHookOrTest (D:\sauce-playwright-runner\2.0.3\bundle\node_modules\@playwright\test\lib\test\fixtures.js:241:16)[22m
+    [2m    at WorkerRunner._runTestWithBeforeHooks (D:\sauce-playwright-runner\2.0.3\bundle\node_modules\@playwright\test\lib\test\workerRunner.js:290:39)[22m
+    [2m    at processTicksAndRejections (internal/process/task_queues.js:97:5)[22m
+
+
+[31m  1 failed[39m
+[31m    test\first.spec.js:9:5 › [chromium] saucectl demo test should verify title of the page [90m=========[31m[39m
